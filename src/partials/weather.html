@@ -1,12 +1,20 @@
 <main>
-  <div class="forecast container">
-    <label for="location-input">Enter your location </label>
-    <input id="location-input" type="text" class="forecast__loc-input" />
+  <div class="background"></div>
+  <div class="container">
+    <div class="forecast">
+      <div class="forecast-blur">
+        <div class="forecast__query">
+          <input id="location-input" type="text" class="forecast__loc-input" />
+          <label for="location-input">Enter your location</label>
 
-    <select class="forecast__days-select">
-      <option>3</option>
-      <option>5</option>
-      <option>10</option>
-    </select>
+          <select id="days-select" class="forecast__days-select">
+            <option>3 days</option>
+            <option>5 days</option>
+            <option>10 days</option>
+          </select>
+        </div>
+        <button class="forecast__search-btn" type="submit">Search</button>
+      </div>
+    </div>
   </div>
 </main>
